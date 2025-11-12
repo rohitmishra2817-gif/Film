@@ -1,139 +1,204 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Movie Flix</title>
-<link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #f8f8f8;
-    padding: 20px;
-  }
-  .mb-community {
-    font-weight: bold;
-    color: #1e4d1e;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  .container {
-    max-width: 400px;
-    background: #fff;
-    border-radius: 12px;
-    padding: 20px 25px 30px 25px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  .title {
-    color: #209c20;
-    font-size: 24px;
-    font-weight: 900;
-    line-height: 1.2;
-    margin-bottom: 8px;
-  }
-  .subtitle {
-    font-weight: 500;
-    color: #5e5e5e;
-    font-size: 14px;
-    margin-bottom: 18px;
-  }
-  .video-wrapper {
-    border: 2px solid #1e4d1e;
-    border-radius: 16px;
-    overflow: hidden;
-    margin-bottom: 18px;
-  }
-  video {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .join-btn {
-    display: block;
-    background-color: #1dc537;
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 10px 0;
-    text-decoration: none;
-    border-radius: 8px;
-    margin-bottom: 18px;
-  }
-  .what-inside {
-    color: #1e4d1e;
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 12px;
-  }
-  ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
-  ul li {
-    margin-bottom: 8px;
-    color: #4a4a4a;
-    font-weight: 600;
-    font-size: 14px;
-  }
-  ul li::before {
-    content: "✓";
-    display: inline-block;
-    color: #3c9c4a;
-    margin-right: 10px;
-    font-weight: 900;
-  }
-#dwn{
-    color: red;
-    background-color: yellow;
-    border-radius: 20px;
-    padding: 9px;
-    width: max-content;
-    font-size: 25px;
+<!doctype html>
 
-}
-.ri-download-line{
-    margin: 5px;
-}
-</style>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Naam Celebration</title>
+  <style>
+    :root{ --bg:#0b1020; --card:#0f1724; --accent:#ffb86b; --muted:#9aa4b2 }
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',Arial}
+    body{background:linear-gradient(180deg,#071025 0%, #071a2b 60%);display:flex;align-items:center;justify-content:center;color:#fff}
+    .wrap{width:100%;max-width:880px;padding:28px;border-radius:14px;background:rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(2,6,23,0.6);text-align:center}
+    h1{margin:0 0 14px;font-size:20px;color:var(--accent)}
+    .stage{height:220px;display:flex;align-items:center;justify-content:center;position:relative}
+    .nameCard{font-size:48px;font-weight:800;letter-spacing:1px;padding:16px 28px;border-radius:12px;background:linear-gradient(90deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02));backdrop-filter: blur(4px);box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    .sub{color:var(--muted);margin-top:8px}
+    .controls{display:flex;gap:8px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+    .controls input[type=text]{padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit;min-width:220px}
+    .btn{padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:700}
+    .btn.primary{background:linear-gradient(90deg,#ff7a59,#ffb86b);color:#111}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .small{font-size:13px;color:var(--muted);margin-top:10px}
+    /* confetti canvas sits absolutely */
+    #confetti{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none}
+    /* animation for pulse when name changes */
+    .pop{animation:pop .8s ease}
+    @keyframes pop{0%{transform:scale(.9);opacity:0}50%{transform:scale(1.05);opacity:1}100%{transform:scale(1);opacity:1}}
+  </style>
 </head>
 <body>
-
-<div class="mb-community">Movie Flix</div>
-
-<div class="container">
-  <div class="title">Download movie without any virus in free</div>
-  <div class="subtitle">It is trusted website for download any movie in free 100% secure</div>
-  <h1 id="dwn">Download process</h1>
-  <div class="video-wrapper">
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-      <iframe 
-        src="https://drive.google.com/file/d/186EHQPFTEwv6jJgMPsnuNIuBxF114RBu/preview" 
-        frameborder="0" 
-        allow="autoplay; fullscreen" 
-        allowfullscreen
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-      </iframe>
-    </div>
-    
-
-  </div>
-
-  <a href="https://just2earn.com/QSao" class="join-btn"><i class="ri-download-line"></i>Download Now</a>
-
-  <div class="what-inside">What Inside?</div>
-  <ul>
-    <li>Easy to download</li>
-    <li>No virus</li>
-    <li>Trusted Website</li>
-    <li>New Movie uploaded daily in our youtube channel</li>
-    <li>Dowmload any movie in free</li>
-  </ul>
+  <div class="wrap">
+    <h1>Aapka support = hamari motivation 💪</h1>
+    <p class="sub">🎉 Dhanyawaad Dosto!
+    Aapki subscribe ki awaaz aayi aur hamara din ban gaya! 🤩
+    .</p><div class="stage">
+  <canvas id="confetti"></canvas>
+  <div id="nameCard" class="nameCard">-- Naam yahan aayega --</div>
 </div>
 
-</body>
+<div class="controls">
+  <input id="newName" type="text" placeholder="Naya naam daalein (eg. Riya)"/>
+  <button id="addBtn" class="btn ghost">Add Naam</button>
+  <button id="startBtn" class="btn primary">Start</button>
+  <button id="stopBtn" class="btn ghost">Stop</button>
+  <button id="clearBtn" class="btn ghost">Clear List</button>
+</div>
+<div class="small">Tip: Naam add karne ke baad Start par click karein. Voice aur confetti automatically chalu ho jayega.</div>
+
+  </div>  <script>
+    // Simple Naam Celebration single-file app
+    const defaultNames = ["Amit","Riya","Rahul","Sneha","Arjun","Pooja","Vikram","Kavya","Rohit","Priya","Ankit","Sakshi","Neha","Vikas","Aarav","Vivaan","Aditya","Vihaan","Arjun","Reyansh","Muhammad","Sai","Atharv","Ayaan",
+    "Krishna","Ishaan","Shaurya","Kabir","Dhruv","Rudra","Anay","Ansh","Aryan","Kartik",
+    "Dev","Yug","Om","Rishi","Harsh","Samar","Nakul","Manav","Amit","Rohan",
+    "Rishabh","Sahil","Nitin","Punit","Pranav","Harshit","Rajat","Rahul","Sunny","Suraj",
+    "Ravi","Deepak","Sumit","Suresh","Mohan","Rakesh","Naresh","Mahesh","Chirag","Kaushal",
+    "Lalit","Vijay","Vikas","Vinay","Tarun","Tejas","Tushar","Varun","Yash","Abhay",
+    "Abhinav","Abhishek","Adarsh","Ajay","Akash","Alok","Amar","Arvind","Ashish","Avinash",
+    "Balram","Bharat","Bhavesh","Chandan","Chetan","Dhananjay","Dheeraj","Dilip","Durgesh","Gaurav",
+    "Girish","Gopal","Govind","Himanshu","Hitesh","Inder","Jai","Jatin","Jeevan","Jeet",
+    "Kailash","Kamal","Karan","Keshav","Kuldeep","Lakshay","Laxman","Lokesh","Madhav","Manish",
+    "Mayank","Milan","Milind","Mukul","Naveen","Nikhil","Niraj","Pankaj","Pradeep","Prakash",
+    "Praveen","Prem","Raghav","Rajat","Ramesh","Ravi","Rizwan","Sagar","Sandeep","Sanjay",
+    "Saurabh","Shiv","Shivam","Shyam","Sonu","Sudhir","Sujal","Sumeet","Sunil","Suresh",
+    "Uday","Ujjwal","Umesh","Utkarsh","Venkatesh","Vibhav","Vikram","Vineet","Vinod","Vishal",
+    "Yuvraj","Zaid","Zeeshan","Aditi","Aarohi","Ananya","Anushka","Aisha","Avantika","Bhavya",
+    "Charu","Chhavi","Damini","Deepika","Divya","Diya","Ekta","Gauri","Gayatri","Heena",
+    "Isha","Ishika","Janhvi","Jiya","Juhi","Kajal","Kalyani","Kamini","Kanika","Karishma",
+    "Kavita","Kiran","Kirti","Komal","Kritika","Krupa","Lavanya","Laxmi","Leela","Mahima",
+    "Meera","Mitali","Mona","Muskan","Naina","Namrata","Neha","Nikita","Niharika","Nisha",
+    "Nupur","Pallavi","Pooja","Poonam","Prachi","Pragya","Preeti","Priya","Radha","Ragini",
+    "Rani","Rashmi","Reema","Richa","Riddhi","Riya","Roshni","Sakshi","Saloni","Sapna",
+    "Sarika","Saraswati","Seema","Shalu","Shikha","Shilpa","Shraddha","Shruti","Simran","Sonia",
+    "Srishti","Suhani","Suman","Sumedha","Sunita","Surbhi","Swati","Tanisha","Tanya","Trisha",
+    "Uma","Usha","Vaishnavi","Vandana","Varsha","Vasudha","Vidhi","Vidya","Yamini","Yashika",];
+    let names = [...defaultNames];
+    let active = false;
+    let lastIndex = -1;
+    const nameCard = document.getElementById('nameCard');
+
+    const newNameInput = document.getElementById('newName');
+    document.getElementById('addBtn').addEventListener('click', ()=>{
+      const v = newNameInput.value.trim();
+      if(!v) return flashInput(newNameInput);
+      names.push(v);
+      newNameInput.value='';
+      speakText(v + ' ko jod diya gaya');
+    });
+    document.getElementById('clearBtn').addEventListener('click', ()=>{names=[]; speakText('Naam ki list saaf kar di gayi'); nameCard.textContent='-- Naam yahan aayega --';});
+
+    document.getElementById('startBtn').addEventListener('click', ()=>{ if(names.length===0){speakText('Koi naam nahin hai. Pehle naam add kariye'); return} if(active) return; active=true; cycleNames(); });
+    document.getElementById('stopBtn').addEventListener('click', ()=>{ active=false; speakText('Ruk gaya'); });
+
+    function flashInput(el){ el.animate([{borderColor:'#ffb86b'},{borderColor:'transparent'}],{duration:400,iterations:2}); }
+
+    async function cycleNames(){
+      while(active){
+        // pick random index different from last
+        if(names.length===0) break;
+        let idx = Math.floor(Math.random()*names.length);
+        if(names.length>1){ let attempts=0; while(idx===lastIndex && attempts<8){ idx = Math.floor(Math.random()*names.length); attempts++; } }
+        lastIndex = idx;
+        const name = names[idx];
+        showName(name);
+        celebrate();
+        await speakName(name);
+        // wait a bit before next name
+        await wait(1400);
+      }
+    }
+
+    function showName(txt){
+      nameCard.classList.remove('pop');
+      void nameCard.offsetWidth; // reflow
+      nameCard.textContent = txt;
+      nameCard.classList.add('pop');
+    }
+
+    // Speech functions using Web Speech API
+    function speakText(text){
+      if(!('speechSynthesis' in window)) return; // not supported
+      const u = new SpeechSynthesisUtterance(text);
+      // set Hindi-like voice if available
+      const voices = speechSynthesis.getVoices();
+      // prefer Hindi or Indian English voice
+      let voice = voices.find(v=>/hi|hindi|indian/i.test(v.lang)) || voices.find(v=>/en-IN|en-GB|en-US/i.test(v.lang));
+      if(voice) u.voice = voice;
+      u.rate = 1;
+      speechSynthesis.cancel();
+      speechSynthesis.speak(u);
+    }
+
+    async function speakName(name){
+      // say name then message
+      speakText(name);
+      // wait for name utterance to finish roughly
+      await wait(900);
+      speakText(name + '\nSubscribe karne ke liye dhanyawad');
+      await wait(1200);
+    }
+
+    function wait(ms){ return new Promise(res=>setTimeout(res,ms)); }
+
+    // Confetti simple implementation
+    const confettiCanvas = document.getElementById('confetti');
+    const ctx = confettiCanvas.getContext('2d');
+    let confettiPieces = [];
+    function resizeCanvas(){ confettiCanvas.width = confettiCanvas.offsetWidth; confettiCanvas.height = confettiCanvas.offsetHeight; }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function celebrate(){
+      // generate pieces
+      const count = 40;
+      for(let i=0;i<count;i++){
+        confettiPieces.push(createPiece());
+      }
+      if(!animating) startAnim();
+    }
+
+    function createPiece(){
+      return {
+        x: Math.random()*confettiCanvas.width,
+        y: Math.random()*-confettiCanvas.height*0.6,
+        r: 6+Math.random()*10,
+        dx: (Math.random()-0.5)*6,
+        dy: 2+Math.random()*6,
+        rot: Math.random()*360,
+        drot: (Math.random()-0.5)*12,
+        color: pick(['#ff7a59','#ffb86b','#7be2ff','#9d7bff','#76f78b'])
+      }
+    }
+
+    function pick(a){ return a[Math.floor(Math.random()*a.length)]; }
+
+    let animating = false;
+    function startAnim(){ if(animating) return; animating=true; requestAnimationFrame(loop); }
+    function loop(){
+      ctx.clearRect(0,0,confettiCanvas.width,confettiCanvas.height);
+      for(let i=confettiPieces.length-1;i>=0;i--){
+        const p = confettiPieces[i];
+        p.x += p.dx; p.y += p.dy; p.rot += p.drot; p.dy += 0.12; // gravity
+        // draw as rotated rectangle
+        ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.rot*Math.PI/180);
+        ctx.fillStyle = p.color;
+        ctx.fillRect(-p.r/2,-p.r/2,p.r, p.r*0.6);
+        ctx.restore();
+        if(p.y>confettiCanvas.height+30 || p.x<-50 || p.x>confettiCanvas.width+50) confettiPieces.splice(i,1);
+      }
+      if(confettiPieces.length>0) requestAnimationFrame(loop); else animating=false;
+    }
+
+    // initialize voices when available (some browsers load asynchronously)
+    if(typeof speechSynthesis!=='undefined'){
+      speechSynthesis.onvoiceschanged = ()=>{};
+    }
+
+    // preload: make first random name appear once
+    (function preload(){ const i = Math.floor(Math.random()*names.length); showName(names[i]); })();
+
+    // small accessibility: clicking name speaks it
+    nameCard.addEventListener('click', ()=>{ const txt = nameCard.textContent.trim(); if(txt && txt!=='-- Naam yahan aayega --'){ speakText(txt + ' — Subscribe karne ke liye dhanyawad'); celebrate(); } });
+
+  </script></body>
 </html>
